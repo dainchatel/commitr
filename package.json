@@ -1,0 +1,28 @@
+{
+  "name": "commitr",
+  "version": "1.0.0",
+  "description": "A background script that automatically makes between 3 and 13 random Github commits in a dummy repo per day (to keep commit counts high).  ",
+  "main": "commitr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nohup node commitr.js & echo $! > save_pid.txt",
+    "stop": "kill -9 `cat save_pid.txt` && rm save_pid.txt",
+    "clear": "node clear.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dainchatel/commitr.git"
+  },
+  "keywords": [
+    "git",
+    "github",
+    "commit",
+    "autocommit"
+  ],
+  "author": "Dain Chatel <dain.chatel@gmail.com> (http://dainchatel.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dainchatel/commitr/issues"
+  },
+  "homepage": "https://github.com/dainchatel/commitr#readme"
+}
