@@ -17,7 +17,9 @@ Then either:
 7. `cd node_modules/commitr`
 8. `npm start`
 
-or
+
+OR
+
 
 #### clone install (don't do this one yet)
 
@@ -40,7 +42,12 @@ On initalization, Commitr selects a random number between 3 and 13 and makes tha
 * Commitr could be made more simple by incorporating the Commander plugin, so users can flag their own repository path from the command line instead of creating the exact file path necessary.
 
 ## Author
+
 Dain Chatel 
+[website](http://dainchatel.com)
+[linkedin](https://linkedin.com/in/dain-chatel)
+[github](https://github.com/dainchatel)
 
 ## Open Source
+
 **Fork and Clone this repository to submit a Pull Request**
