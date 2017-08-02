@@ -43,11 +43,7 @@ On initalization, Commitr selects a random number between 3 and 13 and makes tha
 
 Dain Chatel 
 
-[website](http://dainchatel.com)
-
-[linkedin](https://linkedin.com/in/dain-chatel)
-
-[github](https://github.com/dainchatel)
+[website](http://dainchatel.com) | [linkedin](https://linkedin.com/in/dain-chatel) | [github](https://github.com/dainchatel)
 
 ## Open Source
 
