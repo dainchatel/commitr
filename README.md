@@ -43,4 +43,4 @@ On initalization, Commitr selects a random number between 3 and 13 and makes tha
 Dain Chatel 
 
 ## Open Source
-**Fork and Clone this repository to submit a Pull Request
+**Fork and Clone this repository to submit a Pull Request**
