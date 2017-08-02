@@ -1,5 +1,6 @@
 const { exec } = require('child_process');
 
+
 let state = {
   lastCheck: 0,
   addOrRemove: 'add',
@@ -46,45 +47,35 @@ let makeCommit = (round, dir) => {
   else if (dir === 'remove') {
     operator = 'rm';
   }
-  exec(`cd ~/Projects/newProjects && ${operator} ${round}.txt && git add -A && git commit -m '${commits} ${dir} ${round}' && git push`, (error, stdout, stderr) => {
+  console.log(round, operator);
+  exec(`cd ~/new_projects/projects && ${operator} ${round}.txt && git add -A && git commit -m '${commits} ${dir} ${round}' && git push`, (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error}`);
       return;
     }
   });
 }
-//       console.log('finished ' + dir + ' of ' + round + '.txt');
-//   }
-//   else if (dir === 'remove') {
-//       // console.log('trying to ' + dir + ' ' + round + '.txt');
-//       exec(`cd ~/Projects/newProjects && rm ${round}.txt && git add -A && git commit -m 'tester2' && git push`, (error, stdout, stderr) => {
-//         if (error) {
-//           console.error(`exec error: ${error}`);
-//           return;
-//         }
-//         // console.log(`stdout: ${stdout}`);
-//         // console.log(`stderr: ${stderr}`);
-//       });
-//       console.log('finished ' + dir + ' of ' + round + '.txt');
-//   }
-// }
+
 
 let check = () => setInterval(function() {
-  let currentDate = Date.now();
+  let initializing = new Date();
+  let currentDate = initializing.getDate();
   let lastCheck = state.lastCheck;
-  let diff = currentDate - lastCheck;
-  if (diff >= 86400000/**/) {
+  if (currentDate !== lastCheck) {
     state.lastCheck = currentDate;
     state.commits = Math.floor((Math.random() * 9) + 3);
-    console.log(state.commits);
     commit();
   } else {
     console.log('not time yet');
   }
-}, 2700000/**/);
+}, 300000);
 
 let startUp = () => {
-  let startingDate = Date.now();
+  console.log('hello');
+  state.commits = Math.floor((Math.random() * 9) + 3);
+  commit();
+  let starting = new Date();
+  let startingDate = starting.getDate();
   state.lastCheck = startingDate;
   check();
 }
