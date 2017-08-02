@@ -27,7 +27,7 @@ or
 
 Commitr will then run in the background on your machine. 
 
-To stop it, run `npm stop`. If you stop it, it's important to run 'npm run-script clear' before you restart, or it may try to create files that already exist or delete ones that don't.
+To stop it, run `npm stop`. If you stop it, it's important to run `npm run-script clear` before you restart, or it may try to create files that already exist or delete ones that don't.
 
 ## Mechanism
 
