@@ -1,5 +1,7 @@
 # Commitr
-Automatically make Github commits every day.
+
+![commitr downloads](https://img.shields.io/npm/dt/commitr.svg?style=flat-square)
+![commitr downloads](https://img.shields.io/npm/v/commitr.svg?style=flat-square)
 
 Commitr is a local background script that makes a random number of Github commits once a day. This keeps your Github commit chart nice and green, even if you need to work on other things - like a frantic job search. 
 
