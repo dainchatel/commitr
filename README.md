@@ -1,6 +1,8 @@
 # Commitr
 Automatically make Github commits every day.
 
+Commitr is a local background script that makes a random number of Github commits once a day. This keeps your Github commit chart nice and green, even if you need to work on other things - like a frantic job search. 
+
 ## Installation
 
 1. Create a folder in your root directory (~) called 'new_projects'
@@ -28,10 +30,6 @@ Then either:
 Commitr will then run in the background on your machine. 
 
 To stop it, run `npm stop`. If you stop it, it's important to run `npm run-script clear` before you restart, or it may try to create files that already exist or delete ones that don't.
-
-## Mechanism
-
-On initalization, Commitr selects a random number between 3 and 13 and makes that many dummy commits to the repo. After that, it checks every five minutes to see if it's a new day. If so, it again selects a random number between 3 and 13 and makes that number of commits. This keeps your Github commit chart nice and green. 
 
 ## Issues
 
