@@ -11,6 +11,7 @@ Commitr is a local background script that makes a random number of Github commit
 2. Create a folder inside 'new_projects' called 'projects'
 3. Create a file inside 'projects' called 'test.txt'
 4. From inside your 'new_projects' folder, do a `git init` and then push the repository up to your Github account
+Sidenote: It is very important that you follow these exact instructions. If you put this in another folder or name the folders something else, Commitr will not work.
 
 Then either:
 
